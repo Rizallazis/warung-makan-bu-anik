@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan Bu Anik - Makanan & Layanan Terlengkap</title>
+    <meta name="description" content="Warung Makan Bu Anik berdiri sejak 2018. Menyediakan berbagai makanan, minuman, jasa print, fotokopi, dan ATK. Lokasi strategis di sekitar kampus.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light-mode">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-utensils text-primary"></i> 
+                Bu Anik<span class="text-primary">.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#menu">Layanan</a></li>
+                <li><a href="#advantages">Keunggulan</a></li>
+                <li><a href="#team">Tim</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="badge">Sejak 2018</span>
+                <h1 class="hero-title">Rasa Juara, <br>Harga Mahasiswa.</h1>
+                <p class="hero-desc">Bukan sekadar warung makan. Kami hadir memberikan kelezatan, kenyamanan, dan berbagai layanan percetakan serta ATK untuk kebutuhan harian Anda.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">Lihat Menu & Layanan</a>
+                    <a href="#about" class="btn btn-outline">Kenali Kami</a>
+                </div>
+            </div>
+            <div class="hero-image reveal-right">
+                <div class="image-wrapper">
+                    <video class="main-img" autoplay muted loop playsinline>
+                        <source src="assets/images/video warung makan.mp4" type="video/mp4">
+                    </video>
+                    <div class="floating-card">
+                        <div class="icon-box"><i class="fa-solid fa-star"></i></div>
+                        <div class="card-text">
+                            <h4>Ayam Geprek</h4>
+                            <p>Menu Andalan Kami!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Cerita <span class="text-primary">Kami</span></h2>
+                <p>Mengenal lebih dekat Visi & Misi Warung Makan Bu Anik</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card visi reveal">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3>Visi</h3>
+                    <p>Menjadi warung makan pilihan utama mahasiswa di sekitar kampus yang menyediakan makanan praktis, terjangkau, dan layanan lengkap dengan dukungan teknologi digital.</p>
+                </div>
+                <div class="about-card misi reveal-delay-1">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Menyediakan makanan harian yang berkualitas, mengenyangkan, dan terjangkau.</li>
+                        <li>Memberikan pelayanan yang cepat, ramah, dan nyaman bagi pelanggan.</li>
+                        <li>Mengembangkan pemasaran berbasis digital melalui platform online dan media sosial.</li>
+                        <li>Menambah variasi menu serta menghadirkan program promosi menarik.</li>
+                        <li>Membangun loyalitas pelanggan melalui peningkatan kualitas layanan dan citra usaha.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Services Section -->
+    <section id="menu" class="services section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Menu & <span class="text-primary">Layanan</span></h2>
+                <p>Pilihan terlengkap untuk makan, minum, dan kebutuhan kantor Anda</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="menu-tabs reveal">
+                <button class="tab-btn active" data-filter="all">Semua</button>
+                <button class="tab-btn" data-filter="makanan">🍽️ Makanan</button>
+                <button class="tab-btn" data-filter="minuman">🥤 Minuman</button>
+                <button class="tab-btn" data-filter="layanan">🖨️ Layanan</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+
+                <!-- Geprek -->
+                <div class="menu-card reveal" data-category="makanan">
+                    <div class="menu-card-img">
+                        <img src="assets/images/geprek.jpeg" alt="Ayam Geprek">
+                        <div class="tag">🔥 Unggulan</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h4>Ayam Geprek</h4>
+                        <p>Ayam goreng crispy dihancurkan dengan sambal pedas pilihan. Tersedia level 1–5!</p>
+                    </div>
+                </div>
+
+                <!-- Piscok -->
+                <div class="menu-card reveal-delay-1" data-category="makanan">
+                    <div class="menu-card-img">
+                        <img src="assets/images/piscok.jpeg" alt="Piscok">
+                    </div>
+                    <div class="menu-card-body">
+                        <h4>Piscok</h4>
+                        <p>Pisang coklat goreng renyah di luar, lembut dan manis di dalam. Camilan favorit semua kalangan!</p>
+                    </div>
+                </div>
+
+                <!-- Sayuran -->
+                <div class="menu-card reveal-delay-2" data-category="makanan">
+                    <div class="menu-card-img">
+                        <img src="assets/images/sayuran.jpeg" alt="Sayuran">
+                    </div>
+                    <div class="menu-card-body">
+                        <h4>Sayuran</h4>
+                        <p>Olahan sayuran segar berkualitas, dimasak dengan bumbu sederhana namun lezat dan bergizi.</p>
+                    </div>
+                </div>
+
+                <!-- Telur Balado -->
+                <div class="menu-card reveal-delay-3" data-category="makanan">
+                    <div class="menu-card-img">
+                        <img src="assets/images/telur balado.jpeg" alt="Telur Balado">
+                        <div class="tag tag-spicy">🌶️ Pedas</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h4>Telur Balado</h4>
+                        <p>Telur rebus digoreng dan dibalut sambal balado merah yang gurih, pedas, dan menggugah selera.</p>
+                    </div>
+                </div>
+
+                <!-- Minuman -->
+                <div class="menu-card reveal" data-category="minuman">
+                    <div class="menu-card-img">
+                        <img src="assets/images/minuman.jpeg" alt="Minuman">
+                        <div class="tag tag-drink">🥤 Segar</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h4>Aneka Minuman</h4>
+                        <p>Tersedia minuman dingin dan hangat: es teh, es jeruk, kopi, teh hangat, dan berbagai minuman kekinian.</p>
+                    </div>
+                </div>
+
+                <!-- Layanan Print -->
+                <div class="menu-card reveal-delay-1" data-category="layanan">
+                    <div class="menu-card-img layanan-img">
+                        <div class="layanan-icon"><i class="fa-solid fa-print"></i></div>
+                        <div class="tag tag-layanan">🖨️ Layanan</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h4>Print, Fotokopi & ATK</h4>
+                        <p>Layanan print warna & hitam-putih, fotokopi, cetak foto, serta penjualan alat tulis kantor (ATK) lengkap.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Kenapa Memilih <span class="text-primary">Kami?</span></h2>
+                <p>Keunggulan yang kami hadirkan untuk kepuasan Anda</p>
+            </div>
+            <div class="adv-grid">
+                <div class="adv-item reveal">
+                    <div class="adv-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <h4>Harga Terjangkau</h4>
+                    <p>Sangat pas untuk kantong mahasiswa.</p>
+                </div>
+                <div class="adv-item reveal-delay-1">
+                    <div class="adv-icon"><i class="fa-solid fa-wifi"></i></div>
+                    <h4>WiFi & Nyaman</h4>
+                    <p>Fasilitas WiFi kencang dan suasana yang cocok untuk nugas.</p>
+                </div>
+                <div class="adv-item reveal-delay-2">
+                    <div class="adv-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h4>Lokasi Strategis</h4>
+                    <p>Dekat dengan area kampus, mudah dijangkau.</p>
+                </div>
+                <div class="adv-item reveal-delay-3">
+                    <div class="adv-icon"><i class="fa-solid fa-qrcode"></i></div>
+                    <h4>Tunai & QRIS</h4>
+                    <p>Pembayaran mudah, modern, dan fleksibel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Profil <span class="text-primary">Tim Penyusun</span></h2>
+                <p>Kelompok 2 - Analisis dan Perencanaan Digitalisasi Bisnis</p>
+            </div>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card reveal">
+                    <div class="team-header">
+                        <div class="avatar"><i class="fa-regular fa-user"></i></div>
+                        <div>
+                            <h4>Alika Luthia Kholida</h4>
+                            <span class="role">S1 Manajemen UNISRI</span>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <p><strong>Lahir:</strong> 23 Juni 2006</p>
+                        <p class="desc">Bertanggung jawab dalam penyusunan analisis segmentasi pasar dan strategi pemasaran.</p>
+                        <div class="edu-timeline">
+                            <div class="edu-item">SDN Jenggrik 3 (2012-2018)</div>
+                            <div class="edu-item">SMPN 1 Sragen (2018-2021)</div>
+                            <div class="edu-item">SMKN 1 Sragen (2021-2024)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card reveal-delay-1">
+                    <div class="team-header">
+                        <div class="avatar"><i class="fa-regular fa-user"></i></div>
+                        <div>
+                            <h4>Magdalena Maharani</h4>
+                            <span class="role">S1 Manajemen UNISRI</span>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <p><strong>Lahir:</strong> 22 Februari 2006</p>
+                        <p class="desc">Berperan dalam pengembangan konsep digitalisasi bisnis dan strategi promosi.</p>
+                        <div class="edu-timeline">
+                            <div class="edu-item">SDN Gentan 1 (2012-2018)</div>
+                            <div class="edu-item">SMPN 3 Sukoharjo (2018-2021)</div>
+                            <div class="edu-item">SMAN 1 Polokarto (2021-2024)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card reveal-delay-2">
+                    <div class="team-header">
+                        <div class="avatar"><i class="fa-regular fa-user"></i></div>
+                        <div>
+                            <h4>Ferdiyansah Meiko P.</h4>
+                            <span class="role">S1 Manajemen UNISRI</span>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <p><strong>Lahir:</strong> 12 Mei 2005</p>
+                        <p class="desc">Berfokus pada penyusunan model bisnis serta roadmap digitalisasi usaha.</p>
+                        <div class="edu-timeline">
+                            <div class="edu-item">SDN 1 Metuk Mojosongo (2012-2018)</div>
+                            <div class="edu-item">SMPN 3 Mojosongo (2018-2021)</div>
+                            <div class="edu-item">SMAN 2 Boyolali (2021-2024)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Warung Makan Bu Anik</h3>
+                <p>Pilihan utama makanan praktis, terjangkau, dan layanan lengkap dengan dukungan teknologi digital.</p>
+            </div>
+            <div class="footer-address">
+                <h4><i class="fa-solid fa-location-dot"></i> Lokasi Kami</h4>
+                <p>Jl. Gn. Kawi VI, Joglo, RT 03/10,<br> Kadipiro, Kec. Banjarsari,<br> Kota Surakarta, Jawa Tengah</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Warung Makan Bu Anik. Disusun oleh Kelompok 2 Manajemen UNISRI.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
